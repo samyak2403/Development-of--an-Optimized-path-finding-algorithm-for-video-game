@@ -39,6 +39,46 @@ Pathfinding in video games requires a blend of speed, accuracy, and adaptability
 4. **Breadth-First Search (BFS)**
 5. **Depth-First Search (DFS)**
 
+
+### Optimized Dijkstra's Algorithm
+Dijkstra's algorithm finds the shortest path between nodes in a weighted graph. This implementation optimizes the algorithm with a priority queue, making it efficient for dense graphs.
+
+### Enhanced A* Search Algorithm
+The A* algorithm improves search efficiency by using a heuristic function to guide the path search. This version uses an optimized heuristic function for faster convergence.
+
+### Bidirectional Search
+Bidirectional search reduces search time by simultaneously searching from both the start and end nodes, meeting in the middle.
+
+### Breadth-First Search (BFS)
+BFS is ideal for unweighted graphs, finding the shortest path by exploring each node layer-by-layer.
+
+### Depth-First Search (DFS)
+DFS explores each branch of the graph as far as possible before backtracking. It’s useful for checking connectivity and detecting cycles.
+
+## Applications
+- **Network Routing**: Dijkstra’s and A* for optimal paths.
+- **Pathfinding in Games**: A* for real-time decision-making.
+- **Social Networks**: BFS for level-based exploration (e.g., degree of separation).
+- **Cycle Detection**: DFS to detect cycles in dependency graphs.
+
+## Complexity
+| Algorithm                  | Time Complexity | Space Complexity | Best For                         |
+|----------------------------|-----------------|------------------|----------------------------------|
+| Optimized Dijkstra's       | \(O((V + E) \log V)\) | \(O(V + E)\) | Weighted shortest path          |
+| Enhanced A* Search         | \(O((V + E) \log V)\) | \(O(V + E)\) | Heuristic-based shortest path   |
+| Bidirectional Search       | \(O(b^{d/2})\) | \(O(b^{d/2})\)  | Large undirected graphs         |
+| Breadth-First Search (BFS) | \(O(V + E)\)   | \(O(V)\)        | Unweighted shortest path        |
+| Depth-First Search (DFS)   | \(O(V + E)\)   | \(O(V)\)        | Connectivity and cycle checking |
+
+## Installation
+Clone this repository and run the `GraphSearch` class to see each algorithm in action.
+
+## Usage
+```bash
+# Run the graph algorithms
+python GraphSearch.py
+
+
 ### Key Optimizations
 - **Heuristics**: A* search algorithm with an optimized heuristic for video game maps.
 - **Dynamic Obstacle Handling**: Real-time path recalculations.
