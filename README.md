@@ -75,22 +75,6 @@ Clone this repository and run the `GraphSearch` class to see each algorithm in a
 
 ## Usage
 ```bash
-# Run the graph algorithms
-python GraphSearch.py
-
-
-### Key Optimizations
-- **Heuristics**: A* search algorithm with an optimized heuristic for video game maps.
-- **Dynamic Obstacle Handling**: Real-time path recalculations.
-- **Memory Management**: Efficient data structures for larger grids.
-
-## Requirements
-- **Languages**: Python
-- **Libraries**:
-  - `pygame` for visualization
-  - `heapq` for priority queue management
-  - `random` for maze generation
-  - `time` for performance tracking
 
 Install dependencies:
 ```bash
