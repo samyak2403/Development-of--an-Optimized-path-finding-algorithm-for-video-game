@@ -75,7 +75,7 @@ Clone this repository and run the `GraphSearch` class to see each algorithm in a
 
 ## Usage
 ```bash
-
+```
 Install dependencies:
 ```bash
 pip install pygame
